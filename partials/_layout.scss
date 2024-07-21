@@ -1,0 +1,464 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+// bg home
+
+.bg-home{
+    position: relative;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.87), #06121e), url("../assets/ving.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+  } 
+
+  // hero
+
+  .hero{
+    color: $white-normal;
+    min-height: 80vh;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+  }
+
+  .button-contact{
+
+  margin-top: auto;
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-light;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 100px;
+    text-align: center;
+  }
+
+  .button-contact:hover{
+animation:scaleButton 0.8s alternate infinite;
+  }
+
+  @keyframes scaleButton{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.08);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero{
+        min-height: 60vh;
+
+        h1{
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+        p{
+            font-size: 14px;
+        }
+    } 
+  }
+
+ @media screen and (max-widht: 480px){
+    .hero h1{
+        font-size: 24px;
+    }
+ } 
+
+ // - about-
+
+ .about{
+    background-color: #06121ee7;
+    overflow: hidden;
+    color: $white-normal;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0px 14px 64px 14px;
+  
+    img{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      max-width: 370px;
+      border-radius: 9px;
+      margin-left: 5px;
+    }
+  }
+  
+  .about-content div{
+    flex:1;
+  }
+  
+  .about-mvdescription{
+    h2{
+      flex-direction: column;
+      display: flex;
+      margin-right: 12px;
+      font-size: 38px;
+      margin-bottom: 24px;
+    }
+  
+    p{
+      margin-bottom: 14px;
+      line-height: 150%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content{
+      flex-direction: column;
+    }
+}
+ //--about--
+
+ //SERVICES
+
+ .services{
+  background-color: $white-normal;
+  color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+ }
+
+ .services-content h2{
+  text-transform:uppercase ;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 14px;
+ }
+
+ .services-content p {
+  line-height: 150%;
+  margin-bottom: 14px;
+  text-align: center;
+  max-width: 780px;
+ }
+
+ .haircuts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+gap: 16px;
+padding: 0px 44px 34px 44px;
+ }
+
+ .haircut{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  background-color: $white-normal;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
+  overflow: hidden;
+
+  img{
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.4s;
+  }
+
+ }
+
+ .haircut img:hover{
+  transform: scale(1.2);
+  z-index: 1;
+ }
+
+ .haircut-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: $white-normal;
+  z-index: 99;
+ }
+
+ .haircut-info button{
+  color:$white-normal ;
+  background-color: $green-light;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+ }
+
+ @media screen and (max-width: 768px) {
+  .haircuts{
+    flex-direction: column;
+  }
+  
+  .haircut img{
+    max-width: 740px;
+  }
+ }
+
+ //--
+
+ .footer{
+  background-color: #06121ee7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: #ffff;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 8px;
+  color: $white-normal;
+}
+
+//-malvado page-
+
+.malvado-bg {
+  
+ 
+  margin-top:70px;
+  display: flex;
+  width: 100%;
+  max-width: 380px;
+  flex-direction: column;
+}
+
+.mv-home{
+
+  position: relative;
+}
+
+.mv-home::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(198, 204, 22, 0.103), #9c900b), url("../assets/mini2.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+} 
+
+.mvbutton-contact{
+  
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $yellow-dark;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 200px ;
+    text-align: center;
+  }
+
+  .mabout{
+    background-color:$yellow-dark;
+    overflow: hidden;
+    color: $white-normal;
+  }
+
+  .mfooter{
+    background-color:$yellow-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+  }
+  
+  .mfooter-icons{
+    display: flex;
+    gap: 8px;
+    color: $white-normal;
+  }
+
+
+
+  //-divertido------------------------------
+
+
+
+
+  .divertido-bg {
+  
+ 
+    margin-top:70px;
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    flex-direction: column;
+  }
+  
+  .dv-home{
+  
+    position: relative;
+  }
+  
+  .dv-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(49, 22, 204, 0.103), #350a85), url("../assets/div1.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+  } 
+  
+  .dvbutton-contact{
+    
+      padding: 14px 28px;
+      color: $white-normal;
+      background-color: $purple-dark;
+      border: 0;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 200px ;
+      text-align: center;
+    }
+  
+    .dabout{
+      background-color: $purple-dark;
+      overflow: hidden;
+      color: $white-normal;
+    }
+  
+    .dfooter{
+      background-color:$purple-dark;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 54px 0;
+      gap: 24px;
+      color: $white-normal;
+    }
+    
+    .dfooter-icons{
+      display: flex;
+      gap: 8px;
+      color: $white-normal;
+    }
+
+
+
+    //--badboy--------
+
+
+    .badboy-bg {
+  
+ 
+      margin-top:70px;
+      display: flex;
+      width: 100%;
+      max-width: 380px;
+      flex-direction: column;
+    }
+    
+    .bv-home{
+    
+      position: relative;
+    }
+    
+    .bv-home::before{
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: linear-gradient(to bottom, rgba(97, 70, 45, 0.767), #701d54), url("../assets/bd3.jpg");
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      opacity: 0.9;
+    } 
+    
+    .bv-button-contact{
+      
+        padding: 14px 28px;
+        color: $white-normal;
+        background-color: $purple-light;
+        border: 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 200px ;
+        text-align: center;
+      }
+    
+      .babout{
+        background-color: $purple-light;
+        overflow: hidden;
+        color: $white-normal;
+      }
+    
+      .bfooter{
+        background-color: $purple-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 54px 0;
+        gap: 24px;
+        color: $white-normal;
+      }
+      
+      .bfooter-icons{
+        display: flex;
+        gap: 8px;
+        color: $white-normal;
+      }
